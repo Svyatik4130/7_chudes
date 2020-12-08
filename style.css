@@ -1,5 +1,6 @@
-.nav--top ul{
-    padding: 0px;
+.nav--top ul {
+  padding: 0px;
+  z-index: 3;
 }
 .nav--top ul div {
   display: flex;
@@ -13,43 +14,69 @@
   text-decoration: none;
   margin: auto;
 }
-.nav--top ul .nav-div div  {
+.nav--top ul .nav-div div {
   color: white;
   text-decoration: none;
   background-color: #2a2a2a;
   margin: 0px 1px;
   border-radius: 4px;
 }
-.nav--top ul .nav-div .active{
-    background-color: rgb(23, 59, 126);
+.nav--top ul .nav-div .active {
+  background-color: rgb(23, 59, 126);
 }
-.left{
-    float: left;
-    width: 300px;
-    margin: 5px;
+.left {
+  float: left;
+  width: 300px;
+  margin: 5px;
 }
-.right{
-    float: right;
-    width: 300px;
-    margin: 5px;
+.right {
+  float: right;
+  width: 300px;
+  margin: 5px;
 }
-.container p{
-    font-size: 28px;
+.container p {
+  font-size: 28px;
 }
-.container{
-    animation-name: fullAnim;
-    animation-duration: 3s;
+.container {
+  animation-name: fullAnim;
+  animation-duration: 3s;
+}
+.footer {
+  position: fixed;
+  margin: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #2a2a2a;
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+}
+.inner-footer{
+    margin: 0px auto;
+}
+.inner-footer p {
+    text-align: center;
+    color: cornsilk;
+}
+.inner-footer p a{
+    text-decoration: none;
+    color: #dcebff;
 }
 
-@keyframes fullAnim{
-    0%{
-        opacity: 0;
-        transform: scale(4.0);
-        transform: rotate3d(1, 2, -1, 180deg);
-    }
-    100%{
-        opacity: 1;
-        transform: scale(1.0);
-        transform: rotate3d(0, 0, 0, 0deg);
-    }
+@keyframes fullAnim {
+  0% {
+    opacity: 0;
+    transform: scale(4);
+    transform: rotate3d(1, 2, -1, 180deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
 }
